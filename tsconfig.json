@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "strict": true,
+    "noEmit": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "baseUrl": "src",
+    "paths": {
+      "@assets/*": ["assets/*"],
+      "@layouts/*": ["components/layouts/*"],
+      "@views/*": ["components/views/*"],
+      "@misc/*": ["components/misc/*"],
+      "@routes/*": ["routes/*"],
+      "@services/*": ["services/*"],
+      "@reducers/*": ["reducers/*"],
+      "@resources/*": ["resources/*"],
+      "@middlewares/*": ["middlewares/*"],
+      "@styles/*": ["styles/*"]
+    },
+  },
+  "include": ["src/**/*"],
+  "compileOptions": {
+    "typeRoots": [
+      "node_modules/@types",
+      "./src/types"
+    ],
+    "lib": [
+      "ESNext.String"
+    ]
+  }
+}
